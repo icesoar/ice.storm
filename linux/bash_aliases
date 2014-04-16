@@ -1,0 +1,25 @@
+alias c='clear'
+
+alias cd~='cd ~'
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+
+alias .2='cd ../../'
+alias .3='cd ../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../../'
+
+alias sha1='openssl sha1'
+
+alias vi='vim'
+alias svi='sudo vi'
+alias svim='sudo vi'
+
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+
+alias sag='sudo apt-get'
+

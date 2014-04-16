@@ -1,0 +1,19 @@
+[color]
+        branch = auto
+        diff = auto
+        status = auto
+        interactive = auto
+        ui = true
+[alias]
+	cf = config
+	br = branch
+	co = checkout
+	ci = commit
+	st = status
+	last = log -l HEAD
+	cfgl = config --global
+	nffmg = merge --no-ff
+	rmt = remote
+
+[http]
+[https]
