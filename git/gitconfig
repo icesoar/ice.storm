@@ -1,9 +1,12 @@
+[user]
+	name = Victor Wang
+	email = icesoar@hotmail.com
 [color]
-        branch = auto
-        diff = auto
-        status = auto
-        interactive = auto
-        ui = true
+	branch = auto
+	diff = auto
+	status = auto
+	interactive = auto
+	ui = true
 [alias]
 	cf = config
 	br = branch
@@ -14,6 +17,5 @@
 	cfgl = config --global
 	nffmg = merge --no-ff
 	rmt = remote
-
 [http]
 [https]
