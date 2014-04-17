@@ -37,4 +37,8 @@ alias gco='git checkout'
 alias gci='git commit'
 alias gcf='git config'
 alias gcfgl='git config --global'
+alias gpl='git pull'
+alias gl='git pull'
+alias gph='git push'
+alias gh='git push'
 
