@@ -21,6 +21,12 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
 
+# tar
+alias xtar='tar -xvf'
+alias xtgz='tar -xzvf'
+alias xtbz2='tar -xjvf'
+alias xtZ='tar -xZvf'
+
 # apt stuffs
 
 alias sag='sudo apt-get'
