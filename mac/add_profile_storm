@@ -1,0 +1,8 @@
+
+# Command for refresh termainal
+alias term_up='source ~/.bash_profile'
+
+# Add .bash_profile_storm
+if [ -f ~/.bash_profile_storm ]; then
+    . ~/.bash_profile_storm
+fi
