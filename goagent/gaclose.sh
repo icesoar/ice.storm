@@ -1,12 +1,17 @@
 #!/bin/sh
 
-gaPidFile="/Users/Victor/apps/.logs/goagent.pid"
+gaFolder="$(cd `dirname $0`/../; pwd)"
+# echo "GoAgent path: " $gaFolder
+
+gaLogPath="$gaFolder/logs"
+gaPidFile="$gaLogPath/goagent.pid"
 
 if [ ! -f "$gaPidFile" ]; then
-    echo "GoAgent is not running."
+    echo "GoAgent was not running."
     exit 1
 fi
 
 cat "$gaPidFile" | xargs kill -9
 rm "$gaPidFile"
+echo "GoAgent is stopped."
 exit 0

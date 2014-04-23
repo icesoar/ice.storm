@@ -1,12 +1,15 @@
 #!/bin/sh
 
-appLogPath="/Users/Victor/apps/.logs"
-gaPyFile="/Users/Victor/apps/goagent/src/local/proxy.py"
-gaLogFile="$appLogPath/goagent.log"
-gaPidFile="$appLogPath/goagent.pid"
+gaFolder="$(cd `dirname $0`/../; pwd)"
+# echo "GoAgent path: " $gaFolder
 
-if [ ! -d "$appLogPath" ]; then
-    mkdir "$appLogPath"
+gaLogPath="$gaFolder/logs"
+gaPyFile="$gaFolder/src/local/proxy.py"
+gaLogFile="$gaLogPath/goagent.log"
+gaPidFile="$gaLogPath/goagent.pid"
+
+if [ ! -d "$gaLogPath" ]; then
+    mkdir "$gaLogPath"
 fi
 
 if [ ! -f "$gaPyFile" ]; then
@@ -15,10 +18,11 @@ if [ ! -f "$gaPyFile" ]; then
 fi
 
 if [ -f "$gaPidFile" ]; then
-    echo "GoAgent is running."
+    echo "GoAgent is already running. Ignore this command."
     exit 0
 fi
 
 nohup python "$gaPyFile" > "$gaLogFile" &
 echo $! > "$gaPidFile"
+echo "GoAgent is started."
 exit 0
