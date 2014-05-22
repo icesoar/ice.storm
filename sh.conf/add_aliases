@@ -1,0 +1,16 @@
+
+# Add ~/.sh.conf/aliases_storm
+if [ -f ~/.sh.conf/aliases_storm ]; then
+    . ~/.sh.conf/aliases_storm
+fi
+
+# Add ~/.sh.conf/aliases_local
+if [ -f ~/.sh.conf/aliases_local ]; then
+    . ~/.sh.conf/aliases_local
+fi
+
+# Add ~/.sh.conf/command_storm
+if [ -f ~/.sh.conf/command_storm ]; then
+    . ~/.sh.conf/command_storm
+fi
+
