@@ -1,5 +1,5 @@
 
 # Command for goagent.
-alias garun='./apps/goagent/bin/garun.sh'
-alias gaclose='./apps/goagent/bin/gaclose.sh'
+alias gaon='./apps/goagent/bin/garun.sh'
+alias gaoff='./apps/goagent/bin/gaclose.sh'
 

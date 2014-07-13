@@ -3,7 +3,7 @@
 gaFolder="$(cd `dirname $0`/../; pwd)"
 # echo "GoAgent path: " $gaFolder
 
-gaLogPath="$gaFolder/logs"
+gaLogPath="$HOME/logs"
 gaPidFile="$gaLogPath/goagent.pid"
 
 if [ ! -f "$gaPidFile" ]; then

@@ -3,7 +3,7 @@
 gaFolder="$(cd `dirname $0`/../; pwd)"
 # echo "GoAgent path: " $gaFolder
 
-gaLogPath="$gaFolder/logs"
+gaLogPath="$HOME/logs"
 gaPyFile="$gaFolder/src/local/proxy.py"
 gaLogFile="$gaLogPath/goagent.log"
 gaPidFile="$gaLogPath/goagent.pid"
