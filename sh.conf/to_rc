@@ -1,0 +1,3 @@
+if [ -f ~/.sh.conf/add_aliases ]; then
+    . ~/.sh.conf/add_aliases
+fi
